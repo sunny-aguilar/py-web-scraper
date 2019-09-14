@@ -24,7 +24,7 @@ print(len(repo_list))
 
 full_repo_name = repo_list[0].find('a').text.split('/')
 developer = full_repo_name[0].strip()
-developer = full_repo_name[1].strip()
+repo_name = full_repo_name[1].strip()
 print(developer)
 # print('developer: ', developer)
 # print('name: ', repo_name)
