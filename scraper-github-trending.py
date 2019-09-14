@@ -11,5 +11,6 @@ soup = BeautifulSoup(page.text)
 print(soup)
 
 
-# Exctracting data
+# Exctracting data - get teh repo list
+repo = soup.find(class_="repo-list")
 
