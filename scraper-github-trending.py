@@ -7,14 +7,14 @@ page = requests.get('https://github.com/trending')
 print(page)
 
 # Create a BeautifulSoup object
-soup = BeautifulSoup(page.text)
-print(soup)
+soup = BeautifulSoup(page.text, 'html.parser')
+#print(soup)
 
 
 # Exctracting data - get teh repo list
-repo = soup.find(class_="repo-list")
+repo = soup.find(class_="Box")
 
 # Extracing data - find all instances of this class
-repo_list = repo.find_all(class_='col-12 d-block width-full py-4 border-bottom')
+repo_list = repo.find_all(class_='Box-row ')
 
 print(repo_list)
