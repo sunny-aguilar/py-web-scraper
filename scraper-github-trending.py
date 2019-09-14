@@ -11,7 +11,7 @@ soup = BeautifulSoup(page.text, 'html.parser')
 #print(soup)
 
 
-# Exctracting data - get teh repo list
+# Exctracting data - get the repo list
 repo = soup.find(class_="explore-pjax-container container-lg p-responsive pt-6")
 
 # Extracing data - find all instances of this class
@@ -21,11 +21,17 @@ print(len(repo_list))
 
 
 # get number of stars
+count = 0
 for repo in repo_list:
-  full_repo_name = repo.find('a').text.split('/')
-  developer = full_repo_name[0].strip()
-  repo_name = full_repo_name[1].strip()
-  stars = repo.find(class_='octicon octicon-star').parent.text.strip()
-  print('developer', developer)
-  print('name', repo_name)
-  print('stars', stars)
+  if count > 1:
+    print(repo.find('a').text)
+    full_repo_name = repo.find('a').text.split('/')
+    #print(full_repo_name)
+    developer = full_repo_name[0].strip()
+
+  count += 1
+  #repo_name = full_repo_name[1].strip()
+  #stars = repo.find(class_='octicon octicon-star').parent.text.strip()
+  #print('developer', developer)
+  #print('name', repo_name)
+  #print('stars', stars)
