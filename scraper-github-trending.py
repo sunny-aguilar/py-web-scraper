@@ -27,13 +27,11 @@ developer = full_repo_name[0].strip()
 repo_name = full_repo_name[1].strip()
 print(developer)
 print(repo_name)
-# print('developer: ', developer)
-# print('name: ', repo_name)
 
 
 # get developer and repo name
-#for repo in repo_list:
-    #dev_name = repo_list.find('a').text.split('/')
+for repo in repo_list:
+    dev_name = repo_list.find('a').text.split('/')
     #print(dev_name)
     #print(count)
     #full_repo_name = repo.find('a').text.split('/')
