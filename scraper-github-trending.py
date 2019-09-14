@@ -31,7 +31,10 @@ print(len(repo_list))
 
 # get developer and repo name
 for repo in repo_list:
+  # find the first a tax and split using '/' to get an array with the name and repo
   full_repo_name = repo.find('a').text.split('/')
+  
+  # remove unwanted characters
   developer = full_repo_name[0].strip()
   repo_name = full_repo_name[1].strip()
   print(developer)
