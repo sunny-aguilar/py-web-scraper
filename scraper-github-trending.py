@@ -7,4 +7,4 @@ page = requests.get('https://github.com/trending')
 print(page)
 
 # Create a BeautifulSoup object
-
+soup = BeautifulSoup(page.text)
