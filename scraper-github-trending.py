@@ -27,3 +27,4 @@ for repo in repo_list:
   repo_name = full_repo_name[1].strip()
   stars = repo.find(class_='octicon octicon-star').parent.text.strip()
   print('developer', developer)
+  print('name', repo_name)
