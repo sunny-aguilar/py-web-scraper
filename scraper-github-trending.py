@@ -8,3 +8,8 @@ print(page)
 
 # Create a BeautifulSoup object
 soup = BeautifulSoup(page.text)
+print(soup)
+
+
+# Exctracting data
+
