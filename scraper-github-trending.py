@@ -20,3 +20,5 @@ repo_list = repo.find_all(class_='Box-row')
 print(len(repo_list))
 
 
+# get number of stars
+
