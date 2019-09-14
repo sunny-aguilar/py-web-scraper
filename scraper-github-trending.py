@@ -17,4 +17,4 @@ repo = soup.find(class_="repo-list")
 # Extracing data - find all instances of this class
 repo_list = repo.find_all(class_='col-12 d-block width-full py-4 border-bottom')
 
-
+print(repo_list)
