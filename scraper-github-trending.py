@@ -23,11 +23,12 @@ print(len(repo_list))
 # get number of stars
 count = 0
 for repo in repo_list:
-  if count > 1:
-    print(repo.find('a').text)
-    full_repo_name = repo.find('a').text.split('/')
+  if count > 2:
+    dev_name = repo.find(class_='h3 lh-condensed').text
+    #print(dev_name)
+    #full_repo_name = repo.find('a').text.split('/')
     #print(full_repo_name)
-    developer = full_repo_name[0].strip()
+    #developer = full_repo_name[0].strip()
 
   count += 1
   #repo_name = full_repo_name[1].strip()
