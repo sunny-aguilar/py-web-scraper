@@ -12,9 +12,9 @@ soup = BeautifulSoup(page.text, 'html.parser')
 
 
 # Exctracting data - get teh repo list
-repo = soup.find(class_="Box")
+repo = soup.find(class_="explore-pjax-container container-lg p-responsive pt-6")
 
 # Extracing data - find all instances of this class
-repo_list = repo.find_all(class_='Box-row ')
+repo_list = repo.find_all(class_='Box-row')
 
 print(repo_list)
