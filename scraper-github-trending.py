@@ -38,14 +38,12 @@ for repo in repo_list:
   developer = full_repo_name[0].strip()
   repo_name = full_repo_name[1].strip()
 
-
-  print(developer)
-  print(repo_name)
-
-
+  # get the starts for each repo
   stars = repo.find(class_='octicon octicon-star').parent.text.strip()
-  #print('developer: ', developer)
-  #print('name: ', repo_name)
-  #print('stars: ', stars)
+  
+  # display
+  print('developer: ', developer)
+  print('name: ', repo_name)
+  print('stars: ', stars)
 
 
