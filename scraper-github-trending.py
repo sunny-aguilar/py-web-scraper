@@ -33,24 +33,19 @@ print(len(repo_list))
 for repo in repo_list:
   # find the first a tax and split using '/' to get an array with the name and repo
   full_repo_name = repo.find('a').text.split('/')
-  
+
   # remove unwanted characters
   developer = full_repo_name[0].strip()
   repo_name = full_repo_name[1].strip()
+
+
   print(developer)
   print(repo_name)
-    #print(dev_name)
-    #print(count)
-    #full_repo_name = repo.find('a').text.split('/')
-    #print(full_repo_name)
-    #developer = full_repo_name[0].strip()
 
 
-
-  #repo_name = full_repo_name[1].strip()
-  #stars = repo.find(class_='octicon octicon-star').parent.text.strip()
-  #print('developer', developer)
-  #print('name', repo_name)
-  #print('stars', stars)
+  stars = repo.find(class_='octicon octicon-star').parent.text.strip()
+  #print('developer: ', developer)
+  #print('name: ', repo_name)
+  #print('stars: ', stars)
 
 
