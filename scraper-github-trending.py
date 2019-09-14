@@ -31,8 +31,8 @@ print(len(repo_list))
 
 # get developer and repo name
 for repo in repo_list:
-    full_repo_name = repo_list[0].find('a').text.split('/')
-    developer = full_repo_name[0].strip()
+  full_repo_name = repo.find('a').text.split('/')
+  developer = full_repo_name[0].strip()
   repo_name = full_repo_name[1].strip()
   print(developer)
   print(repo_name)
