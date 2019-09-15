@@ -2,6 +2,8 @@
 import requests
 from bs4 import BeautifulSoup
 
+import csv
+
 # Get the page
 page = requests.get('https://github.com/trending')
 print(page)
@@ -18,15 +20,10 @@ repo = soup.find(class_="explore-pjax-container container-lg p-responsive pt-6")
 repo_list = repo.find_all(class_='h3 lh-condensed')
 
 print(len(repo_list))
-#print(repo_list[0])
-# print(repo_list[1])
-# print(repo_list[2])
 
-# full_repo_name = repo_list[0].find('a').text.split('/')
-# developer = full_repo_name[0].strip()
-# repo_name = full_repo_name[1].strip()
-# print(developer)
-# print(repo_name)
+
+file_name = 'github_trending_today.csv'
+
 
 
 # get developer and repo name
