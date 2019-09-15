@@ -23,6 +23,8 @@ print(len(repo_list))
 
 
 file_name = 'github_trending_today.csv'
+f = csv.writer(open(file_name, 'w', newline=''))
+f.writerow(['Developer', 'Repo Name'])
 
 
 
