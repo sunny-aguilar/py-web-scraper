@@ -26,7 +26,6 @@ f = csv.writer(open(file_name, 'w', newline=''))
 f.writerow(['Developer', 'Repo Name'])
 
 
-
 # get developer and repo name
 for repo in repo_list:
   # find the first a tax and split using '/' to get an array with the name and repo
