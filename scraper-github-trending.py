@@ -43,7 +43,7 @@ for repo in repo_list:
   print('developer: ', developer)
   print('name: ', repo_name)
   #print('stars: ', stars)
-  
-  
 
+  # add the info as a row into the CSV file
+  f.writerow([developer, repo_name])
 
