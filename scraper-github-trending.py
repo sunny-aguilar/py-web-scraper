@@ -2,6 +2,7 @@
 # Author: Sandro Aguilar
 # Created: Sept 14, 2019
 # Libraries Used: requests, BeautifulSoup, csv
+
 import requests
 from bs4 import BeautifulSoup
 import csv
