@@ -46,4 +46,3 @@ for repo in repo_list:
 
   # add the info as a row into the CSV file
   f.writerow([developer, repo_name])
-
