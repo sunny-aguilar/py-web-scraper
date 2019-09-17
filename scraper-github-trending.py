@@ -15,7 +15,6 @@ print(page)
 soup = BeautifulSoup(page.text, 'html.parser')
 #print(soup)
 
-
 # Exctracting data - get the repo list
 repo = soup.find(class_="explore-pjax-container container-lg p-responsive pt-6")
 
