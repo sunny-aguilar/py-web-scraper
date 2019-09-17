@@ -56,6 +56,7 @@ for repo in repo_list:
   print('developer: ', developer)
 
   print('name: ', repo_name, '\n')
+
   #print('stars: ', stars, '\n')
 
 
