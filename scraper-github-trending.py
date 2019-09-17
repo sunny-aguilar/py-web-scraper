@@ -24,6 +24,7 @@ repo_list = repo.find_all(class_='h3 lh-condensed')
 # Print total elements found
 print(len(repo_list))
 
+
 # create a file object and write column names
 file_name = 'github_trending_today.csv'
 
