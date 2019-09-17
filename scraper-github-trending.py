@@ -12,6 +12,7 @@ import csv
 # Get the page
 page = requests.get('https://github.com/trending')
 
+# Print request response to confirm server response
 print(page)
 
 # Create a BeautifulSoup object
