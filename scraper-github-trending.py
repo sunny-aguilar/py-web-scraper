@@ -1,5 +1,5 @@
 # Webscraper using Python
-# Author:       Sandro Aguilar
+# Author:         Sandro Aguilar
 # Created:          Sept 14, 2019
 # Libraries Used:   requests, BeautifulSoup, csv
 
