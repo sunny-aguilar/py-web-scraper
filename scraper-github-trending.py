@@ -8,6 +8,7 @@ import requests
 from bs4 import BeautifulSoup
 import csv
 
+
 # Get the page
 page = requests.get('https://github.com/trending')
 print(page)
