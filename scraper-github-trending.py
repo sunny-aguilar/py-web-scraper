@@ -40,6 +40,7 @@ for repo in repo_list:
 
   # remove unwanted characters
   developer = full_repo_name[0].strip()
+
   repo_name = full_repo_name[1].strip()
 
   # get the starts for each repo
