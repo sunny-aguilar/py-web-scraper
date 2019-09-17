@@ -15,6 +15,7 @@ page = requests.get('https://github.com/trending')
 # Print request response to confirm server response
 print(page)
 
+
 # Create a BeautifulSoup object
 soup = BeautifulSoup(page.text, 'html.parser')
 #print(soup)
