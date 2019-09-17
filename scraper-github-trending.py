@@ -3,7 +3,7 @@
 # Created:          Sept 14, 2019
 # Libraries Used:   requests, BeautifulSoup, csv
 
-
+# Import libraries
 import requests
 from bs4 import BeautifulSoup
 import csv
