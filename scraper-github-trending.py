@@ -33,7 +33,7 @@ f = csv.writer(open(file_name, 'w', newline=''))
 f.writerow(['Developer', 'Repo Name'])
 
 
-# get developer and repo name
+# iterate through elements to extract data
 for repo in repo_list:
   # find the first a tax and split using '/' to get an array with the name and repo
   full_repo_name = repo.find('a').text.split('/')
